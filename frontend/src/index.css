@@ -1,0 +1,18 @@
+@import 'katex/dist/katex.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { background: #131314; color: #e3e3e3; }
+.md table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+.md th, .md td { border: 1px solid #3c4043; padding: 8px 10px; text-align: left; }
+.md th { background: #282a2c; }
+.md tr:nth-child(even) td { background: #1e1f20; }
+.md pre { background: #1e1f20; border: 1px solid #2f3133; border-radius: 12px; padding: 12px; overflow-x: auto; }
+.md code { font-family: ui-monospace, Consolas, monospace; font-size: 13px; }
+.md :not(pre) > code { background: #282a2c; padding: 2px 6px; border-radius: 6px; }
+.md h1, .md h2, .md h3 { font-weight: 600; margin: 14px 0 8px; }
+.md ul { list-style: disc; padding-left: 22px; }
+.md ol { list-style: decimal; padding-left: 22px; }
+.md blockquote { border-left: 3px solid #a8c7fa; padding-left: 12px; color: #9aa0a6; margin: 10px 0; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: #3c4043; border-radius: 8px; }

@@ -1,0 +1,11 @@
+3. Backend essentials
+- FastAPI path operations, Pydantic validation, CORS, status codes, SSE via `StreamingResponse`.
+- Auth: passwords hashed with bcrypt/argon2; sessions via signed JWT (short expiry + refresh); never store secrets in code.
+
+```python
+from fastapi import FastAPI
+app = FastAPI()
+
+@app.post("/api/chat-sync")
+def chat_sync(req: ChatRequest):
+    return {"answer": "...", "sources": 
